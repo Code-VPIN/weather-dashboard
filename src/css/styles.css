@@ -1,0 +1,39 @@
+.weather-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    max-width: fit-content;
+  }
+
+  
+  .search input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .weather-display {
+    margin-top: 20px;
+  }
+  
+  .forecast-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .favorite-cities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favorite-cities li {
+    margin: 10px 0;
+  }
+  
