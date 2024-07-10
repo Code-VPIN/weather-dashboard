@@ -38,10 +38,20 @@ const WeatherDashboard = () => {
     setFavorites([...favorites, newFavorite]);
   };
 
+  // const removeFavorite = async (id) => {
+  //   await axios.delete(`http://localhost:5000/favorites/${id}`);
+  //   setFavorites(favorites.filter(fav => fav.id !== id));
+  // };
+
   const removeFavorite = async (id) => {
-    await axios.delete(`http://localhost:5000/favorites/${id}`);
-    setFavorites(favorites.filter(fav => fav.id !== id));
+    try {
+      await axios.delete(`http://localhost:5000/favorites/${id}`);
+      setFavorites(favorites.filter(fav => fav.id !== id));
+    } catch (error) {
+      console.error('Error removing favorite city', error);
+    }
   };
+  
 
   return (
     <div className="weather-dashboard">

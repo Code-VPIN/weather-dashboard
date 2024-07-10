@@ -1,39 +1,166 @@
-.weather-dashboard {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-    background-color: antiquewhite;
-    max-width: fit-content;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap");
 
-  
-  .search input {
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .search button {
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .weather-display {
-    margin-top: 20px;
-  }
-  
-  .forecast-item {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .favorite-cities ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .favorite-cities li {
-    margin: 10px 0;
-  }
-  
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../image/nature.jpg') fixed no-repeat center;
+  background-size: cover;
+}
+
+.weather-dashboard {
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.weather-dashboard h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search {
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 140px);
+  margin-right: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+.weather-display {
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.forecast-item {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.favorite-cities {
+  margin-top: 20px;
+}
+
+.favorite-cities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-cities li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.favorite-cities li button {
+  background-color: #dc3545;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.favorite-cities li button:hover {
+  background-color: #c82333;
+}
+
+.weather-dashboard button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.weather-dashboard button:hover {
+  background-color: #0056b3;
+}
+
+.weather-dashboard .favorites-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.weather-dashboard .favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.weather-dashboard .favorite-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.weather-dashboard .favorite-item button:hover {
+  background-color: #c82333;
+}
+
+.weather-dashboard .weather-display {
+  margin: 20px 0;
+  font-family: "Josefin Sans",  sans-serif;
+}
